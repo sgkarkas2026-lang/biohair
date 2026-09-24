@@ -791,7 +791,10 @@ img {
     .hero-sub { font-size: 16px; }
     .hero-buttons { flex-direction: column; }
     .hero-buttons .btn { width: 100%; }
-    .hero-image img { height: 300px; }
+    .hero-image img {
+    height: 260px;
+    object-position: center top;
+}
 
     /* Заголовки */
     .section-title { font-size: 26px; }
