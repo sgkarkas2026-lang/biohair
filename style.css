@@ -527,3 +527,202 @@ img {
 
 .contact-form input:focus,
 .contact-form
+/* ===================== ПЛАНШЕТЫ (до 1024px) ===================== */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .price-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===================== ТЕЛЕФОНЫ (до 768px) ===================== */
+@media (max-width: 768px) {
+
+    /* --- Отступы --- */
+    .container {
+        padding: 0 16px;
+    }
+
+    .section {
+        padding: 45px 0;
+    }
+
+    /* --- Шапка и меню --- */
+    .header-inner {
+        padding: 14px 16px;
+        flex-wrap: wrap;
+    }
+
+    .burger {
+        display: block;      /* показываем кнопку-гамбургер */
+        order: 2;
+    }
+
+    .nav {
+        display: none;        /* прячем меню */
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 14px;
+        order: 3;
+    }
+
+    .nav.open {
+        display: flex;        /* показываем при клике */
+    }
+
+    .nav a {
+        padding: 14px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 16px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo-city {
+        font-size: 11px;
+        padding: 2px 8px;
+    }
+
+    /* --- Hero --- */
+    .hero {
+        padding: 40px 0 50px;
+    }
+
+    .hero-inner {
+        grid-template-columns: 1fr;   /* одна колонка */
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero-sub {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    /* --- Заголовки секций --- */
+    .section-title {
+        font-size: 26px;
+    }
+
+    .section-sub {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* --- Карточки, шаги, цены, галерея — в одну колонку --- */
+    .cards,
+    .steps,
+    .price-grid,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    /* --- CTA --- */
+    .cta {
+        padding: 40px 0;
+    }
+
+    .cta h2 {
+        font-size: 24px;
+    }
+
+    /* --- Страница-заголовок --- */
+    .page-hero {
+        padding: 50px 0 35px;
+    }
+
+    .page-hero h1 {
+        font-size: 30px;
+    }
+
+    /* --- Контакты --- */
+    .contacts-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .contact-form form {
+        padding: 22px;
+    }
+
+    /* --- Галерея --- */
+    .gallery-item img {
+        height: 260px;
+    }
+}
+
+/* ===================== МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) ===================== */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero-sub {
+        font-size: 15px;
+    }
+
+    .hero-image img {
+        height: 240px;
+    }
+
+    .section-title {
+        font-size: 22px;
+    }
+
+    .page-hero h1 {
+        font-size: 26px;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+
+    .cta h2 {
+        font-size: 20px;
+    }
+
+    .cta p {
+        font-size: 15px;
+    }
+}
