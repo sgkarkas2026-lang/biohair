@@ -726,3 +726,101 @@ img {
         font-size: 15px;
     }
 }
+/* ===================== ПЛАНШЕТЫ (до 1024px) ===================== */
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 34px; }
+    .cards,
+    .steps,
+    .price-grid,
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===================== ТЕЛЕФОНЫ (до 768px) ===================== */
+@media (max-width: 768px) {
+
+    .container { padding: 0 16px; }
+    .section { padding: 45px 0; }
+
+    /* Шапка и меню */
+    .header-inner {
+        padding: 14px 16px;
+        flex-wrap: wrap;
+    }
+    .burger {
+        display: block;
+        order: 2;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: #2c2c2c;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        margin-top: 14px;
+        order: 3;
+    }
+    .nav.open { display: flex; }
+    .nav a {
+        padding: 14px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 16px;
+    }
+    .logo { font-size: 19px; }
+    .logo-city { font-size: 11px; padding: 2px 8px; }
+
+    /* Hero */
+    .hero { padding: 40px 0 50px; }
+    .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .hero h1 { font-size: 28px; }
+    .hero-sub { font-size: 16px; }
+    .hero-buttons { flex-direction: column; }
+    .hero-buttons .btn { width: 100%; }
+    .hero-image img { height: 300px; }
+
+    /* Заголовки */
+    .section-title { font-size: 26px; }
+    .section-sub { font-size: 15px; margin-bottom: 30px; }
+
+    /* Сетки в одну колонку */
+    .cards,
+    .steps,
+    .price-grid,
+    .gallery { grid-template-columns: 1fr; }
+
+    .card { padding: 25px 20px; }
+
+    /* CTA */
+    .cta { padding: 40px 0; }
+    .cta h2 { font-size: 24px; }
+
+    /* Page hero */
+    .page-hero { padding: 50px 0 35px; }
+    .page-hero h1 { font-size: 30px; }
+
+    /* Контакты */
+    .contacts-grid { grid-template-columns: 1fr; gap: 35px; }
+    .contact-form form { padding: 22px; }
+
+    /* Галерея */
+    .gallery-item img { height: 260px; }
+}
+
+/* ===================== МАЛЫЕ ТЕЛЕФОНЫ (до 480px) ===================== */
+@media (max-width: 480px) {
+    .hero h1 { font-size: 24px; }
+    .hero-sub { font-size: 15px; }
+    .hero-image img { height: 240px; }
+    .section-title { font-size: 22px; }
+    .page-hero h1 { font-size: 26px; }
+    .price { font-size: 24px; }
+    .gallery-item img { height: 220px; }
+    .cta h2 { font-size: 20px; }
+    .cta p { font-size: 15px; }
+}
