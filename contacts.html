@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | BioHair Первоуральск</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span> BioHair<span class="logo-city">Первоуральск</span>
+        </a>
+        <button class="burger" id="burger" aria-label="Меню">☰</button>
+        <nav class="nav" id="nav">
+            <a href="index.html">Главная</a>
+            <a href="services.html">Услуги и цены</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html" class="active">Контакты</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Контакты</h1>
+        <p>Запишитесь онлайн или позвоните — ответим быстро</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container contacts-grid">
+
+        <div class="contact-info">
+            <h2>Как нас найти</h2>
+
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <strong>Адрес</strong>
+                    <p>г. Первоуральск, ул. Толмачева, 39</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <strong>Телефон</strong>
+                    <p><a href="tel:+79961865989">+7 (996) 186-59-89</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                    <strong>Email</strong>
+                    <p><a href="mailto:marimotor@bk.ru">marimotor@bk.ru</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🕐</div>
+                <div>
+                    <strong>Режим работы</strong>
+                    <p>Пн–Сб: 9:00 – 20:00<br>Вс: выходной</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Записаться онлайн</h2>
+            <form id="bookingForm">
+                <label for="name">Ваше имя *</label>
+                <input type="text" id="name" placeholder="Мария" required>
+
+                <label for="phone">Телефон *</label>
+                <input type="tel" id="phone" placeholder="+7 (___) ___-__-__" required>
+
+                <label for="service">Услуга</label>
+                <select id="service">
+                    <option>Наращивание до 40 см</option>
+                    <option>Наращивание 40–60 см</option>
+                    <option>Наращивание от 60 см</option>
+                    <option>Коррекция</option>
+                    <option>Снятие волос</option>
+                    <option>Уход и укладка</option>
+                </select>
+
+                <label for="comment">Комментарий</label>
+                <textarea id="comment" rows="4" placeholder="Удобное время, пожелания..."></textarea>
+
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                <p class="form-note">* — обязательные поля</p>
+            </form>
+
+            <div id="formResult" class="form-result"></div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div>
+            <p class="footer-logo">✦ BioHair Первоуральск</p>
+            <p>Наращивание биопротеиновых волос</p>
+        </div>
+        <div>
+            <p><strong>Адрес:</strong> г. Первоуральск, ул. Толмачева, 39</p>
+            <p><strong>Телефон:</strong> <a href="tel:+79961865989">+7 (996) 186-59-89</a></p>
+        </div>
+        <div>
+            <p>© 2025 BioHair. Все права защищены.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
