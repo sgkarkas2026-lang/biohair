@@ -636,7 +636,7 @@ img {
     }
 
     .hero-image img {
-    height: 200px;         /* на телефоне — невысокая */
+    height: 180px;         /* на телефоне — невысокая */
         border-radius: 14px;
     }
 
