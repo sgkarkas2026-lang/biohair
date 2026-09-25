@@ -792,9 +792,10 @@ img {
     .hero-buttons { flex-direction: column; }
     .hero-buttons .btn { width: 100%; }
     .hero-image img {
-    height: 260px;
-    object-position: center top;
-}
+        height: auto;           /* высота по пропорциям */
+        max-height: 400px;      /* не выше 400px */
+        object-fit: contain;    /* фото целиком */
+    }
 
     /* Заголовки */
     .section-title { font-size: 26px; }
